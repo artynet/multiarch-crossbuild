@@ -3,7 +3,7 @@ MAINTAINER Manfred Touron <m@42.am> (https://github.com/moul)
 
 # Install deps
 RUN set -x; \
-  && dpkg --add-architecture arm64               \
+  dpkg --add-architecture arm64                  \
   && dpkg --add-architecture armel               \
   && dpkg --add-architecture armhf               \
   && dpkg --add-architecture i386                \
