@@ -1,8 +1,8 @@
+dist: xenial
 sudo: required
-
-services:
-- docker
+services: docker
+language: bash
 
 script:
-- make build
-- make test
+  - make build
+  - make test
